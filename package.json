@@ -1,0 +1,11 @@
+{
+  "name": "rsportfolio",
+  "version": "1.0.0",
+  "description": "React+SASS Porfolio for Ryan Sebastian",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ryan Sebastian",
+  "license": "ISC"
+}
