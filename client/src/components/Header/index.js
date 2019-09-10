@@ -1,4 +1,5 @@
 import React from 'react';
+import HeaderBtn from '../HeaderBtn';
 
 const Header = () => {
     return (
@@ -9,6 +10,7 @@ const Header = () => {
                     <span className="heading-primary-sub">Full-Stack Web Developer</span>
                 </h1>
             </div>
+            <HeaderBtn>Check Out My Work!</HeaderBtn>
         </header>
     )
 }
