@@ -2,7 +2,7 @@ import React from 'react';
 
 const HeaderBtn = props => {
     return (
-        <a href="#" class="btn btn-white">
+        <a href="#" className="btn btn-white btn-animated">
             {props.children}
         </a>
     );
