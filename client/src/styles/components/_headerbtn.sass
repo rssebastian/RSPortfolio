@@ -2,24 +2,25 @@
 .btn:visited
     text-transform: uppercase
     text-decoration: none
-    padding: 15px 40px
+    padding: 1.5rem 4rem
     position: relative
+    font-size: 1.6rem
 
 .btn:hover
-    transform: translate(-50%, -3px)
-    box-shadow: 0 10px 20px rgba(0,0,0,.2)
+    transform: translate(-50%, -.3rem)
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.2)
 
 .btn:active
-    transform: translate(-50%, -1px)
-    box-shadow: 0 5px 10px rgba(0,0,0,.2)
+    transform: translate(-50%, -.1rem)
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2)
 
-.btn-white
+.btn--white
     position: absolute
     top: 80%
     transform: translateX(-50%) 
     background-color: #e1e1e1
     color: #143ca2
-    border-radius: 100px
+    border-radius: 10rem
     transition: all .2s
 
 .btn::after
@@ -27,28 +28,28 @@
     display: inline-block
     height: 100%
     width: 100%
-    border-radius: 100px
+    border-radius: 10rem
     position: absolute
     top: 0
     left: 0
     z-index: -1
     transition: all .4s
 
-.btn-white::after
+.btn--white::after
     background-color: #e1e1e1
 
 .btn:hover::after
     transform: scaleX(1.4) scaleY(1.6)
     opacity: 0
 
-.btn-animated
+.btn--animated
     animation: moveInBottom .5s ease-out .75s
     animation-fill-mode: backwards
 
 @-webkit-keyframes moveInBottom 
     0%
         opacity: 0
-        transform: translateY(30px)
+        transform: translateY(3rem)
         
     100%
         opacity: 1
@@ -57,7 +58,7 @@
 @-moz-keyframes moveInBottom 
     0%
         opacity: 0
-        transform: translateY(30px)
+        transform: translateY(3rem)
     
     100%
         opacity: 1
@@ -66,7 +67,7 @@
 @keyframes moveInBottom
     0%
         opacity: 0
-        transform: translateY(30px)
+        transform: translateY(3rem)
         
     100%
         opacity: 1
