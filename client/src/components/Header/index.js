@@ -10,7 +10,7 @@ const Header = () => {
                     <span className="heading-primary--sub">Full-Stack Web Developer</span>
                 </h1>
             </div>
-            <HeaderBtn>Check Out My Work!</HeaderBtn>
+            <HeaderBtn>My Work</HeaderBtn>
         </header>
     )
 }

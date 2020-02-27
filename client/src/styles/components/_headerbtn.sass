@@ -1,74 +1,48 @@
-.btn:link,
-.btn:visited
+.btn
+    &:link, &:visited
     text-transform: uppercase
     text-decoration: none
-    padding: 1.5rem 4rem
+    padding: .5rem 2rem
     position: relative
-    font-size: 1.6rem
-
-.btn:hover
-    transform: translate(-50%, -.3rem)
-    box-shadow: 0 1rem 2rem rgba(0,0,0,.2)
-
-.btn:active
-    transform: translate(-50%, -.1rem)
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2)
-
-.btn--white
-    position: absolute
-    top: 80%
-    transform: translateX(-50%) 
-    background-color: #e1e1e1
-    color: #143ca2
-    border-radius: 10rem
-    transition: all .2s
-
-.btn::after
-    content: ""
-    display: inline-block
-    height: 100%
-    width: 100%
-    border-radius: 10rem
-    position: absolute
-    top: 0
-    left: 0
-    z-index: -1
-    transition: all .4s
-
-.btn--white::after
-    background-color: #e1e1e1
-
-.btn:hover::after
-    transform: scaleX(1.4) scaleY(1.6)
-    opacity: 0
-
-.btn--animated
-    animation: moveInBottom .5s ease-out .75s
-    animation-fill-mode: backwards
-
-@-webkit-keyframes moveInBottom 
-    0%
-        opacity: 0
-        transform: translateY(3rem)
-        
-    100%
-        opacity: 1
-        transform: translate(0)
-
-@-moz-keyframes moveInBottom 
-    0%
-        opacity: 0
-        transform: translateY(3rem)
+    font-size: 1.3rem
     
-    100%
-        opacity: 1
-        transform: translate(0)
 
-@keyframes moveInBottom
-    0%
+    &:hover
+        transform: translate(-50%, -.3rem)
+        box-shadow: 0 1rem 2rem rgba($color-black,.2)
+
+    &:active
+        transform: translate(-50%, -.1rem)
+        box-shadow: 0 .5rem 1rem rgba($color-black,.2)
+
+    &--white
+        position: absolute
+        bottom: 5%
+        transform: translateX(-50%) 
+        background-color: $off-white
+        color: $dark-blue
+        border-radius: 10rem
+        transition: all .2s
+
+    &::after
+        content: ""
+        display: inline-block
+        height: 100%
+        width: 100%
+        border-radius: 10rem
+        position: absolute
+        top: 0
+        left: 0
+        z-index: -1
+        transition: all .4s
+
+    &--white::after
+        background-color: $off-white
+
+    &:hover::after
+        transform: scaleX(1.4) scaleY(1.6)
         opacity: 0
-        transform: translateY(3rem)
-        
-    100%
-        opacity: 1
-        transform: translate(0)
+
+    &--animated
+        animation: moveInBottom .5s ease-out .75s
+        animation-fill-mode: backwards
